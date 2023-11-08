@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    background-color: #FFF;
+}
+
+section {
+    width: 100%;
+    height: auto;
+    // background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+    .card-live {
+        width: 370px;
+        height: auto;
+        border: 0px solid #CCC;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #FCF5ED;
+
+        .btn-group {
+            background-color: transparent;
+            height: auto;
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+
+            h4 {
+                color: #00D;
+            }
+
+            button {
+                background-color: #CCC;
+                font-size: 20px;
+                width: 28px;
+                height: 28px;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+                transition: all 0.2s ease-in;
+                padding: 0px;
+                margin: 0px;
+
+                &.btn-closed {
+                    background-color: transparent;
+                }
+
+
+                &:hover {
+                    background-color: #CCC;
+                    opacity: 0.5;
+                    color: #000;
+                }
+            }
+        }
+
+        .cart-body {
+            padding: 5px;
+        }
+
+
+    }
+}

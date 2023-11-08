@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+}
+
+.matches {
+  background-color: #0398DC;
+  padding: 5px 50px;
+}
+.matches .bold_match {
+  font-weight: bold;
+}
+.matches ul {
+  list-style: none;
+}
+.matches ul li {
+  display: inline-block;
+  padding: 5px;
+}
+.matches ul li a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 15px;
+  font-size: 14px;
+}
+.matches ul li a:hover {
+  color: #CCC;
+}
+
+.score-card {
+  width: 100%;
+  height: 150px;
+  background-color: #0398DC;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.score-card .card {
+  width: 325px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+}
+.score-card .card .noe-border {
+  border: none;
+}
+.score-card .card p {
+  border-bottom: 1px solid silver;
+  padding: 3px;
+  font-size: 13px;
+}
+.score-card .card p.tose {
+  color: #CCC;
+}
+.score-card .card .team {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px;
+  font-size: 14.5px;
+}
+.score-card .card .team .flag-icon {
+  font-size: 15px;
+  margin-right: 5px;
+}
+.score-card .card .team span.total-score {
+  font-weight: bold;
+}
+.score-card .card .team i {
+  color: #0398DC;
+  font-size: 10px;
+  font-weight: normal;
+}
+.score-card .card .schedule ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.score-card .card .schedule ul li {
+  padding: 5px;
+  display: inline-block;
+}
+.score-card .card .schedule ul li a {
+  text-decoration: none;
+  color: #2B2C2D;
+  font-weight: normal;
+  font-size: 14px;
+}
+.score-card .card:hover {
+  cursor: pointer;
+  border: 1px solid #CC0;
+}
+
+.player {
+  width: 100%;
+  height: auto;
+  padding: 10px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px dashed #000;
+  height: 30px;
+  margin-bottom: 10px;
+}
+.player h3 {
+  color: #FFF;
+  background: #F00;
+  padding: 10px 25px;
+  border-radius: 8px;
+}
+.player .match-group {
+  display: flex;
+  justify-content: space-between;
+}
+.player .match-group .circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.player .match-group .circle img {
+  width: 125px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px #ccc;
+}
+.player .match-group .circle .info {
+  text-align: center;
+}
+.player .match-group .circle .info span {
+  font-size: 13px;
+  color: #00A9FF;
+}
+.player .match-group .circle:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 1px #011;
+  color: #CCC;
+}/*# sourceMappingURL=index007.css.map */

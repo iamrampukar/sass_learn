@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+}
+
+.play-card {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    padding: 10px;
+    background: #FFCCDD url('./../images/bg_pattern.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .profile-img {
+        width: 150px;
+        border-radius: 50%;
+    }
+
+    .info {
+        width: 100%;
+        margin-left: 30px;
+        padding: 45px;
+        background-color: transparent;
+        border-radius: 10px;
+
+        .profile {
+            margin-bottom: 15px;
+
+            h2 {
+                margin-bottom: 2px;
+            }
+
+            h4 {
+                color: #CCC;
+            }
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: block;
+                padding-bottom: 3px;
+                padding-top: 3px;
+            }
+        }
+    }
+}

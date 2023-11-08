@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: #FFF;
+}
+
+section {
+  width: 98%;
+  height: 500px;
+  margin: 15px auto;
+  background-color: #655FF7;
+  border-radius: 15px;
+  padding: 10px;
+}
+section .nav-bar {
+  background-color: #0F172A;
+  width: 100%;
+  height: auto;
+  padding: 0px 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section .nav-bar .brand {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+section .nav-bar .brand img {
+  width: 100px;
+  margin-right: 20px;
+}
+section .nav-bar .brand span {
+  color: #FFF;
+  font-weight: bolder;
+}
+section .nav-bar .menu-bar {
+  background-color: transparent;
+}
+section .nav-bar .menu-bar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+section .nav-bar .menu-bar ul li {
+  display: inline-block;
+  margin-top: 10px;
+}
+section .nav-bar .menu-bar ul li a {
+  text-decoration: none;
+  color: #DDD;
+  padding: 10px;
+  font-size: 15px;
+}
+section .nav-bar .menu-bar ul li a:hover {
+  color: #FFF;
+}
+section .nav-bar .menu-button {
+  background-color: transparent;
+}
+section .nav-bar .menu-button a {
+  text-decoration: none;
+}
+section .nav-bar .menu-button a.more-corve {
+  border-radius: 10px;
+}
+section .nav-bar .menu-button a span {
+  font-weight: bold;
+}
+section .nav-bar .menu-button a:hover {
+  background-color: #000;
+  color: #FFF;
+  outline: 1px solid #000;
+  border: 1px solid #000;
+}/*# sourceMappingURL=index014.css.map */
