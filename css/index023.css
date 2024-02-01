@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: #FFF;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: lightblue;
+  padding: 15px 10%;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  padding: 5px;
+}
+nav ul li ul.main-sub-menu {
+  display: none;
+  -moz-columns: 3;
+       columns: 3;
+  position: absolute;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: red;
+}
+nav ul li:hover .main-sub-menu {
+  display: block;
+}/*# sourceMappingURL=index023.css.map */

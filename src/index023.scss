@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    background-color: #FFF;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: lightblue;
+    padding: 15px 10%;
+
+
+    ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+
+        li {
+            padding: 5px;
+
+
+            ul.main-sub-menu {
+                display: none;
+                columns: 3;
+                position: absolute;
+            }
+
+            a {
+                text-decoration: none;
+
+                &:hover {
+                    color: red;
+
+                }
+            }
+
+            &:hover .main-sub-menu {
+                display: block;
+            }
+        }
+    }
+}
