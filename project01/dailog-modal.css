@@ -1,0 +1,27 @@
+*, ::after, ::before,a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.boxes{
+    width: auto;
+    /*height: 500px;*/
+    background-color: #00CCDD;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    justify-content: space-around;
+    grid-row-gap: 20px;
+}
+
+.item{
+    width: 320px;
+    height: 100px;
+    background-color: #E9FF4E;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}

@@ -1,0 +1,80 @@
+*, *::after, *::before,a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-size: 100%;
+    font-family: Verdana;
+}
+.subscribe {
+    width: 100%;
+    height: 100px;
+    background-color: #f6f9ff;
+    display: flex;
+    justify-content: center;
+    /*justify-items: normal;*/
+    align-items: center;
+}
+
+.subscribe .search{
+    background-color: #FFF;
+    width: 658px;
+    padding: 2px 0px;
+    border-radius: 8px;
+    border: 1px solid #CCC
+}
+.subscribe .search input[type='text']{
+    padding: 10px;
+    width: 500px;
+    outline: none;
+    border: 0px solid #CCDDFF;
+}
+.subscribe .search button{
+    padding: 10px;
+    background-color: #0000FF;
+    border: none;
+    outline: none;
+    color: #FFF;
+    border-radius: 6px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.subscribe .search button:hover{
+    background-color: blueviolet;
+}
+.toll-fee{
+    width: 70px;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid #CCDDFF;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.5s;
+    position: absolute;
+    top: 50%;
+}
+.toll-fee:hover{
+    background-color: cyan;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    bottom: 0%;
+    left: 0px;
+    position: fixed;
+    background-color: #0E4F97;
+    font-size: 13px;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer a{
+    color: yellow;
+}

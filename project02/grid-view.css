@@ -1,0 +1,73 @@
+*, ::before, ::after, a {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+}
+
+.container {
+    width: 1280px;
+    height: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    background-color: red;
+}
+
+.container .card {
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.container .card .cart-image {
+    width: 280px;
+    border-radius: 15px;
+}
+
+.container .card .card-info {
+    margin: 5px 0px 5px;
+}
+
+.card-info h3 {
+    color: #0cc
+}
+
+.card-info p {
+    font-size: 14px;
+    line-height: 1.2rem;
+}
+
+.card-info .info, .card-info .share {
+    font-size: 12px;
+    background-color: blueviolet;
+    padding: 2px 5px 2px 5px;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 768px;
+        background-color: green;
+        grid-template-columns:auto auto;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 480px;
+        background-color: blueviolet;
+        grid-template-columns:auto;
+        row-gap: 15rem;
+    }
+}

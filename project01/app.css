@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+nav {
+    /*background-color: gray;*/
+    width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav .logo{
+    font-size: xx-large;
+    font-weight: bold;
+    color: #F00;
+}
+nav .menu{
+    background-color: red;
+    border-radius: 10px;
+    border: 0px solid #FFF;
+}
+nav .menu ul{
+    list-style: none;
+}
+nav .menu ul li{
+    display: inline-block;
+    background-color: transparent;
+    padding: 10px 8px;
+}
+nav .menu ul li a{
+    text-decoration: none;
+    padding: 10px 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: small;
+    transition: all 0.5s;
+}
+nav .menu ul li a.quote{
+    /*background-color: blueviolet;*/
+    color: #FFF;
+    /*border-radius: 10px;*/
+}
+nav .menu ul li  span{
+    color: #FFF;
+    font-size: 10px;
+    background-color: blueviolet;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    padding: 5px 3px;
+    position: relative;
+    right: 12px;
+    top: -10px;
+    /*font-weight: bold;*/
+}
+nav .menu ul li a:hover{
+    color: #FFF;
+}
+.hero-banner{
+    width: 1280px;
+    margin: 10px auto;
+    height: 500px;
+    /*background-color: grey;*/
+    border-radius: 10px;
+    background: url("images/hero-banner.jpg") no-repeat;
+    background-size: 100%;
+    /*background-clip: border-box;*/
+}
+.hero-banner h3{
+    color: #FFF;
+    width: 500px;
+    font-size: xxx-large;
+    padding: 10px;
+}
+.hero-banner p{
+    color: #FFF;
+    padding: 10px;
+    line-height: 1.5rem;
+    min-width: 200px;
+    max-width: 640px;
+    font-size: larger;
+}
+.hero-banner input[type='text'] {
+    background-color: #FFF;
+    outline: 0px solid #FFF;
+    border: 0px solid #CCFFDD;
+    padding: 25px;
+    width: 500px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.hero-banner button{
+    background-color: #00F;
+    outline: 0;
+    border: 0px solid #CCFFDD;
+    padding: 25px 40px;
+    border-radius: 10px;
+    color: #FFF;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.hero-banner button:hover{
+    background-color: blueviolet;
+}
+.hero-banner .count-block{
+    margin: 25px 0px;
+    /*background-color: transparent;*/
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+.hero-banner .count-block span{
+    font-size: x-large;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.services{
+    width: 1280px;
+    margin: 0 auto;
+    /*background-color: red;*/
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.services .card{
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    border:  1px solid #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.services .card .icon{
+    font-size: 3rem;
+    color: #00F;
+    margin-right: 10px;
+}
+.services .card .detail p{
+    line-height: 1.5rem;
+}
+.services .card .detail a{
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.services .card:hover .icon, .services .card:hover .detail{
+    color: lightgreen;
+}
+.services .card:hover .detail{
+    color: blueviolet;
+}
+
+.about-block{
+    width: 1280px;
+    margin: 50px auto;
+    /*background-color: yellow;*/
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.about-block .about{
+    width: 650px;
+    padding: 10px;
+}
+.about-block .about p{
+    line-height: 1.5rem;
+}
+.about-block .about ul{
+    list-style: none;
+    margin-top: 25px;
+}
+.about-block .about ul li{
+    display: block;
+    display: flex;
+    margin-bottom: 2.0rem;
+}
+.about-block .about ul li i{
+    font-size: 3.5rem;
+    color: blue;
+}
+.about-block .about ul li span{
+    margin-left: 15px;
+}
+.about-block .video{
+    /*background-color: red;*/
+    width: 600px
+}
+.about-block .video img{
+    /*background-color: red;*/
+    width: 600px;
+    min-width: 600px;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.our-service{
+    width: 1280px;
+    /*background-color: yellowgreen;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.our-service .card{
+    width: 400px;
+    height: 330px;
+    /*background-color: green;*/
+    border-radius: 10px;
+    cursor: pointer;
+}
+.our-service .card .card-img{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 5px;
+
+}
+.our-service .card .card-img img{
+    width: 400px;
+    height: 200px;
+     transition: all 1.0s;
+    /*background-color: blue;*/
+}
+.our-service .card .card-img:hover img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+.our-service .card h2{
+    color: darkslateblue;
+    padding: 0px 10px;
+}
+.our-service .card p{
+    color: darkslateblue;
+    padding: 0px 10px;
+    line-height: 1.5rem;
+}
+
+.call-action{
+    width: 100%;
+    /*height: 300px;*/
+    background-color: burlywood;
+    padding: 15px;
+    opacity: 0.7;
+}
+.call-action .detail h1{
+    font-size: xx-large;
+}
+.call-action .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.call-action .detail p{
+    line-height: 1.8rem;
+    text-align: center;
+    margin: 20px 20px;
+    font-size: x-large;
+}
+.call-action .detail button {
+    color: #FFF;
+    padding: 15px 100px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.pricing {
+    width: 1280px;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: gray;*/
+}
+.pricing .card{
+    border: 0px solid #0000FF;
+    border-radius: 10px;
+    width: 350px;
+    padding: 50px;
+    box-shadow: 5px 5px 10px lightblue;
+}
+
+.pricing .card ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.pricing .card ul i{
+    color: #000;
+    padding-right: 10px;
+}
+.pricing .card ul li{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+.pricing .card button{
+    outline: none;
+    border: 1px solid #0000FF;
+    background-color: #FFF;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+.up-arrow{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
+.up-arrow .fa-solid {
+    color: #FFF;
+    background-color: blueviolet;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.up-arrow .fa-solid:hover{
+    background-color: blueviolet;
+    opacity: .9;
+    color: #000;
+    transform: scale(1.1);
+}
+
+.footer{
+    background-color: #0e1d34;
+    width: 100%;
+    color: #FFFFFF;
+}
+.footer .container{
+    width: 1280px;
+    min-width: 1280px;
+    max-width: 1280px;
+    margin: 25px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .container .logis{
+    padding: 25px;
+    width: 500px;
+}
+.footer .container .logis h1{
+    padding: 10px;
+}
+
+.footer .container .logis p{
+    padding: 10px;
+    line-height: 1.5rem;
+    margin-bottom: 5px;
+}
+.footer .container .logis .social-app{
+    display: flex;
+    justify-content: start;
+}
+
+.footer .container .logis .social-app a{
+    color: #FFF;
+    padding: 5px 7px;
+    border: 1px solid #CCFFDD;
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    transition: .5s;
+}
+.footer .container .logis .social-app a:hover{
+    border: 1px solid #0000FF;
+    opacity: .5;
+}
+.footer .useful-link{
+    padding: 25px;
+    width: 250px;
+}
+.footer .useful-link ul{
+    list-style: none;
+    margin-top: 10px;
+}
+.footer .useful-link ul li {
+    display: block;
+    padding: 3px 0px;
+}
+.footer .useful-link ul li a {
+    text-decoration: none;
+    color: #FFF;
+    transition: all 0.5s;
+}
+.footer .useful-link ul li a:hover{
+    color: #0CD;
+}

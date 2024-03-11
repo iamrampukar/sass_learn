@@ -1,0 +1,92 @@
+*, ::before, ::after, a {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+}
+
+.boot-modal {
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boot-modal .modal {
+    width: 600px;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.modal h1 {
+    font-size: larger;
+    line-height: 2.5rem;
+}
+
+.modal p {
+    line-height: 1.2rem;
+}
+
+.modal button {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    color: #FFF;
+    background-color: blueviolet;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.noti-detail {
+    width: 350px;
+    background-color: whitesmoke;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.noti-detail h3 {
+    font-size: 15px;
+}
+
+.noti-detail p {
+    font-size: small;
+    margin: 5px 0px 5px;
+}
+
+.noti-detail .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noti-detail .footer button {
+    width: 20%;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    color: #FFFFFF;
+    padding: 5px;
+    border-radius: 5px;
+    align-content: center;
+    transition: all 1.5s;
+}
+
+.noti-detail .footer button:hover {
+    cursor: pointer;
+    background-color:brown;
+}

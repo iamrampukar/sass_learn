@@ -1,0 +1,60 @@
+*, ::before, ::after, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 100%;
+    font-family: "Roboto", sans-serif;
+    background: url("images/wallpaper.jpg") no-repeat center center;
+    background-size: auto;
+}
+
+.lite-modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: #00CCDD;*/
+}
+
+.lite-modal .modal-box {
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.modal-box h1 {
+    font-size: 20px;
+}
+
+.modal-box p {
+    font-size: 15px;
+    margin: 7px 0 7px;
+}
+
+.modal-box button {
+    width: 100%;
+    height: 35px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 255, .6);
+    transition: all 0.9s;
+}
+
+.modal-box button:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 430px) {
+    .lite-modal .modal-box {
+        background-color: red;
+    }
+}
